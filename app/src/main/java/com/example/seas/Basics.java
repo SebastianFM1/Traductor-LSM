@@ -40,10 +40,13 @@ public class Basics extends MainActivity {
             case 3:
                 createSignsSal();
                 break;
+            case 4:
+                createSignsFam();
+                break;
         }
 
         Activity Basics = this;
-        binding.bsrecycler.setLayoutManager(new GridLayoutManager(getApplicationContext(), 3));
+        binding.bsrecycler.setLayoutManager(new GridLayoutManager(getApplicationContext(), 4));
         binding.bsrecycler.setAdapter(new CardAdapter(signList));
     }
 
@@ -121,5 +124,16 @@ public class Basics extends MainActivity {
         signList.add(new Sign(R.drawable.img_si, signList.size(), ' '));
         signList.add(new Sign(R.drawable.img_ya, signList.size(), ' '));
 
+    }
+
+    private void createSignsFam(){
+        signList.add(new Sign(R.drawable.img_hermano, signList.size(), ' '));
+        signList.add(new Sign(R.drawable.img_hermana, signList.size(), ' '));
+        signList.add(new Sign(R.drawable.img_papa, signList.size(), ' '));
+        signList.add(new Sign(R.drawable.img_mama, signList.size(), ' '));
+        signList.add(new Sign(R.drawable.img_hijo, signList.size(), ' '));
+        signList.add(new Sign(R.drawable.img_hija, signList.size(), ' '));
+        signList.add(new Sign(R.drawable.img_tio, signList.size(), ' '));
+        signList.add(new Sign(R.drawable.img_tia, signList.size(), ' '));
     }
 }

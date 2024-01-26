@@ -16,6 +16,7 @@ public class Menu_activity extends MainActivity {
     Button btnAbc;
     Button btnMesesyTiempo;
     Button btnSaludos;
+    Button btnFamiliar;
     ActivityMenuBinding binding;
 
     @Override
@@ -28,6 +29,7 @@ public class Menu_activity extends MainActivity {
         btnAbc = binding.btnAbc;
         btnMesesyTiempo = binding.btnMesesyTiempo;
         btnSaludos = binding.btnSaludos;
+        btnFamiliar = binding.btnFamiliar;
 
         allocateActivityTitle(getString(R.string.menu_basic_sign));
 
@@ -43,6 +45,11 @@ public class Menu_activity extends MainActivity {
 
         btnSaludos.setOnClickListener(view -> {
             global.menu=3;
+            Cambio();
+        });
+
+        btnFamiliar.setOnClickListener(view -> {
+            global.menu=4;
             Cambio();
         });
 
