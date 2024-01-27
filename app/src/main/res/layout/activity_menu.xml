@@ -7,48 +7,69 @@
     android:background="@drawable/gradient_gray"
     tools:context=".Menu_activity">
 
-    <Button
-        android:id="@+id/btnAbc"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/llTopButtons"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/clasification1"
-        app:layout_constraintBottom_toTopOf="@+id/btnMesesyTiempo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59" />
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/btnMesesyTiempo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="96dp"
-        android:text="@string/clasification2"
-        app:layout_constraintBottom_toTopOf="@+id/btnSaludos"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        <!-- Primer botón del grupo superior -->
+        <Button
+            android:id="@+id/btnAbc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:drawableTop="@drawable/img_abecedario"
+            android:text="@string/clasification1"
+            />
 
-    <Button
-        android:id="@+id/btnSaludos"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="276dp"
-        android:text="@string/clasification3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent" />
+        <!-- Segundo botón del grupo superior -->
+        <Button
+            android:id="@+id/btnMesesyTiempo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:drawableTop="@drawable/img_mesesytiempo"
+            android:text="@string/clasification2"
+            />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/btnFamiliar"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/llBottomButtons"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
-        android:text="@string/clasification4"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/llTopButtons">
+
+        <!-- Primer botón del grupo inferior -->
+        <Button
+            android:id="@+id/btnSaludos"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:drawableTop="@drawable/img_saludos"
+            android:text="@string/clasification3"
+            />
+
+        <!-- Segundo botón del grupo inferior -->
+        <Button
+            android:id="@+id/btnFamiliar"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="200dp"
+            android:layout_marginStart="8dp"
+            android:drawableTop="@drawable/img_familiar"
+            android:text="@string/clasification4"
+            />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Traductor LSM</string>
-    <string name="escribe">Escribe texto</string>
+    <string name="escribe">Escribir texto</string>
     <string name="objeto1">Seña</string>
     <!--Strings used for menu items-->
-    <string name="menu_main">Home</string>
+    <string name="menu_main">Inicio</string>
     <string name="menu_text_sign">Texto a seña</string>
     <string name="menu_sign_text">Seña a texto</string>
     <string name="menu_basic_sign">Señas basicas</string>
@@ -18,5 +18,5 @@
     <string name="clasification1">ABECEDARIO</string>
     <string name="clasification2">MESES Y TIEMPO</string>
     <string name="clasification3">SALUDOS</string>
-    <string name="clasification4">FAIMLIAR</string>
+    <string name="clasification4">FAMILIAR</string>
 </resources>
