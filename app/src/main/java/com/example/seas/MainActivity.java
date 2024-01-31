@@ -21,6 +21,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 
 import com.example.seas.databinding.ActivityMainBinding;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -35,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         FrameLayout container = drawer.findViewById(R.id.activityContainer);
         container.addView(view);
         super.setContentView(drawer);
+//        setupBottomNavigation();
+        // Configura el NavController para HomeActivity
+//        NavController navController = Navigation.findNavController(this, R.id.activityContainer);
 
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
@@ -55,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.menu_drawer_open, R.string.menu_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+//        setupBottomNavigation();
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -88,4 +93,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             getSupportActionBar().setTitle(titleString);
         }
     }
+
+//    private void setupBottomNavigation() {
+//        // Configurar Navigation Bottom
+//        NavController bottomNavController = Navigation.findNavController(this, R.id.activityContainer);
+//        BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
+//
+//        // Vincula automáticamente el controlador de navegación con la vista del BottomNavigationView,
+//        // estableciendo la navegación y la selección de elementos de manera coherente.
+//        NavigationUI.setupWithNavController(bottomNavigationView, bottomNavController);
+//    }
+
+
+
 }

@@ -26,6 +26,7 @@
     <color name="principal">#F8465C</color>
     <color name="secundario">#F86275</color>
     <color name="terciario">#FAB5BE</color>
+    <color name="btn_nav">#F8465C</color>
 
 
 </resources>
