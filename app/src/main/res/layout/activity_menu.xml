@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="130dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         app:layout_constraintTop_toTopOf="parent">
@@ -23,6 +23,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="200dp"
+            android:layout_marginRight="10dp"
             android:drawableTop="@drawable/img_abecedario"
             android:text="@string/clasification1"
             />
@@ -54,6 +55,7 @@
             android:id="@+id/btnSaludos"
             android:layout_width="0dp"
             android:layout_weight="1"
+            android:layout_marginRight="10dp"
             android:layout_height="200dp"
             android:drawableTop="@drawable/img_saludos"
             android:text="@string/clasification3"
